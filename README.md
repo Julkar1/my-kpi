@@ -1,3 +1,5 @@
+https://julkar1.github.io/my-kpi/
+
 # Life KPI Tracker PRO++
 
 <img width="1820" height="702" alt="image" src="https://github.com/user-attachments/assets/d0d6098c-c104-4d9a-81ab-0b5114a87bf4" />

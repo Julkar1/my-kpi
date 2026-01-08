@@ -1,0 +1,10 @@
+:root{--bg:#0f172a;--card:#1e293b;--text:#e5e7eb;--accent:#22c55e;--warning:#facc15;}
+.light{--bg:#f8fafc;--card:#fff;--text:#0f172a;--accent:#16a34a;--warning:#f59e0b;}
+body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;padding:15px;}
+.card{background:var(--card);padding:15px;border-radius:12px;margin-bottom:20px;border:2px solid transparent;}
+input[type=number]{width:50px;margin-left:6px;}
+button{background:var(--accent);font-weight:bold;cursor:pointer;border:none;padding:8px 12px;border-radius:6px;margin-top:6px;color:#fff;}
+h2{margin-top:0;}
+.flex{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px;}
+.score-box{font-size:1.2em;font-weight:bold;margin:5px 0;}
+canvas{background:#fff;border-radius:12px;padding:10px;}

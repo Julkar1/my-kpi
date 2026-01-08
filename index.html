@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ultimate Life KPI Tracker PRO++ v2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/icon.png">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>🚀 Ultimate Life KPI Tracker PRO++ v2</h1>
+
+<div class="flex">
+  <button onclick="toggleTheme()">🌙 / ☀ Theme</button>
+  <button onclick="exportData()">⬇ Export JSON</button>
+  <button onclick="document.getElementById('import').click()">⬆ Import JSON</button>
+  <input type="file" id="import" hidden onchange="importData(event)">
+  <button onclick="exportPDF()">📄 Export PDF</button>
+</div>
+
+<!-- Daily Input Cards -->
+<div id="cardsContainer"></div>
+
+<button onclick="saveDailyPoints()">💾 Save Today Points</button>
+<div class="score-box" id="dailyTotal">0 / 100</div>
+<div class="score-box" id="streak">🔥 Streak: 0 days</div>
+
+<!-- Charts -->
+<div class="card"><h2>📅 Weekly Average</h2><canvas id="weeklyChart"></canvas></div>
+<div class="card"><h2>📈 Monthly Dashboard</h2><canvas id="monthlyChart"></canvas></div>
+<div class="card"><h2>🔥 30-Day Challenge Tracker</h2><canvas id="challengeChart"></canvas></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
